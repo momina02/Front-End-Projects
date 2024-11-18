@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+
+ <head>
+  <meta charset="utf-8">
+  <!-- CSS-Styles-Sheet -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+  integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <!-- ViewPort -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Student Information</title>
+  <!-- Bootstrap JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <!-- LOGO -->
+  <link rel="icon" class="logo" href="images/blue-book.png">
+
+ </head>
+
+ <body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-light">
+   <a class="navbar-brand">Student Management System</a>
+   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+   </button>
+   <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+     <li class="nav-item">
+      <a class="nav-link" href="#About">About</a>
+     </li>
+     <li class="nav-item">
+      <a class="nav-link" href="#Details">Details</a>
+     </li>
+     <li class="nav-item">
+      <a class="nav-link" href="#Information">Information</a>
+     </li>
+     <li class="nav-item">
+      <a class="nav-link" href="#Contact">Contact</a>
+     </li>
+    </ul>
+   </div>
+  </nav>
+
+  <!-- SECTION1 -->
+
+  <section id="About">
+
+   <div class="row">
+
+    <div class="col-lg-6 col-md-12">
+     <div class="carousel-container" data-ride="carousel" style="border-radius: 5%;">
+      <div class="carousel-item active">
+       <img class="d-block" src="images/classroom.jpg" alt="First slide">
+      </div>
+      <div class="carousel-item">
+       <img class="d-block" src="images/lab.jpg" alt="Second slide">
+      </div>
+      <div class="carousel-item">
+       <img class="d-block" src="images/library.jpg" alt="Third slide">
+      </div>
+     </div>
+    </div>
+
+    <div class="col-lg-6 col-md-12" style="padding-top: 80px;">
+     <h1 class="about-heading">Welcome to the Student Management System</h1>
+     <p class="about-para">The Student Management System is a comprehensive tool designed to simplify the management of
+      students, courses, grades, and reports. With our user-friendly interface, administrators can efficiently handle
+      student records
+      and academic data.</p>
+    </div>
+
+   </div>
+
+  </section>
+
+  <!-- SECTION2 -->
+
+  <section id="Details">
+
+   <div class="container1">
+    <img src="images/StudentProfile.jpg" alt="Feature1" style="border-radius: 10%; margin-left: 40px;">
+    <div class="text">
+     <h3 class="feature-h1">Student Profiles</h3>
+     <p class="feature-p1">Store and manage detailed student profiles with personal information, contact details, and
+      enrollment history.</p>
+    </div>
+   </div>
+
+   <div class="container2">
+    <img src="images/CourseManagement.jpg" alt="Feature2" style="border-radius: 10%; margin-right: 30px;">
+    <div class="text" style="padding-left: 590px; padding-right: 0;">
+     <h3 class="feature-h2">Course Management</h3>
+     <p class="feature-p2">Create and organize courses, assign instructors, define prerequisites, and manage class
+      schedules.</p>
+    </div>
+   </div>
+
+   <div class="container3">
+    <img src="images/GradeTracking.jpg" alt="Feature3" style="border-radius: 10%; margin-left: 40px;">
+    <div class="text">
+     <h3 class="feature-h3">Grade Tracking</h3>
+     <p class="feature-p3">Record and track student grades, calculate GPA, and generate transcripts and progress
+      reports.</p>
+    </div>
+   </div>
+
+  </section>
+
+  <section id="Information">
+    <h2 class="info-h">Information</h2>
+    <p class="info-p">From here, student records can be accessed and managed</p>
+  
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 col-md-12">
+          <form action="/add_student" method="POST">
+            <div class="input-row">
+              <label for="student-id" class="labels">Student ID:</label>
+              <input type="text" id="student-id" name="student-id" required>
+              <label for="student-name" class="labels">Student Name:</label>
+              <input type="text" id="student-name" name="student-name" required>
+              <label for="student-degree" class="labels">Student Degree:</label>
+              <input type="text" id="student-degree" name="student-degree" required>
+              <label for="student-course" class="labels">Student Course:</label>
+              <input type="text" id="student-course" name="student-course" required>
+              <label for="student-year" class="labels">Year:</label>
+              <input type="text" id="student-year" name="student-year" required>
+            </div>
+            
+            <div class="center">
+              <button type="submit" class="btn" style="margin:10px;">Add</button>
+            </div>
+          </form>
+        </div>
+        <div class="col-lg-12 col-md-6">
+          <form action="/update_student" method="POST">
+            <div class="input-row">
+              <label for="student-id" class="labels">Student ID:</label>
+              <input type="text" id="student-id" name="student-id" required>
+              <label for="new-student-name" class="labels">New Name:</label>
+              <input type="text" id="new-student-name" name="new-student-name" required>
+            </div> 
+            <div class="center">
+              <button type="submit" class="btn" style="margin:10px;">Update</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12 col-md-6">
+          <form action="/delete_student" method="POST">
+            <div class="input-row">
+              <label for="student-id" class="labels">Student ID:</label>
+              <input type="text" id="student-id" name="student-id" required>
+            </div>
+            <div class="center">
+              <button type="submit" class="btn" style="margin:10px;">Delete</button>
+            </div> 
+          </form>
+        </div>
+        <div class="col-lg-12 col-md-6">
+          <form action="/filter_students" method="GET">
+            <div class="input-row">
+            <label for="student-degree" class="labels">Filter by Degree:</label>
+            <input type="text" id="student-degree" name="student-degree" required>
+            <label for="student-course" class="labels">Filter by Course:</label>
+            <input type="text" id="student-course" name="student-course" required>
+          </div>
+          <div class="center">
+            <button type="submit" class="btn" style="margin:10px;">Filter</button>
+          </div>
+          </form>
+        </div>
+      </div>
+  
+      <!-- Table for displaying filtered results -->
+      <div class="row">
+        <div class="col-md-12">
+          <div class="table-responsive" style="margin-top: 20px;">
+            <table class="table table-bordered">
+              <thead style="color: white;">
+                <tr>
+                  <th>ID</th>
+                  <th>Student Name</th>
+                  <th>Degree</th>
+                  <th>Course</th>
+                  <th>Year</th>
+                </tr>
+              </thead>
+              <tbody style="color: white;">
+                {% for student in filter_results %}
+                <tr>
+                  <td>{{ student.student_id }}</td>
+                  <td>{{ student.student_name }}</td>
+                  <td>{{ student.student_degree }}</td>
+                  <td>{{ student.student_course }}</td>
+                  <td>{{ student.student_year }}</td>
+                </tr>
+                {% endfor %}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- SECTION4-->
+
+  <section id="Contact">
+   <div class="container">
+    <h2 class="contact-h">Contact Us</h2>
+    <p class="contact-p">If you have any inquiries or need assistance, please feel free to reach out to us.</p>
+   </div>
+  </section>
+
+  <!-- SECTION5-->
+
+  <footer id="Footer">
+   <a href="#"><img class="footer-logo" src="images/fb.png" alt="ft-logo"></a>
+   <a href="#"><img class="footer-logo" src="images/insta.png" alt="ft-logo"></a>
+   <a href="#"><img class="footer-logo" src="images/twitter.png" alt="ft-logo"></a>
+   <a href="#"><img class="footer-logo" src="images/email.png" alt="ft-logo"></a>
+   <p>&copy; 2023 Student Management System. All rights reserved.</p>
+  </footer>
+
+ </body>
+
+</html>
