@@ -1,5 +1,3 @@
-Here's a README for your front-end project:
-
 # Car Care
 
 Car Care is a front-end web project designed to showcase a comprehensive platform for car maintenance, customization, buying, and selling services. With an elegant and user-friendly interface, it helps users access various automotive services effortlessly.
