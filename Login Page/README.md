@@ -2,6 +2,14 @@
 
 This is a simple front-end login page designed to provide a user-friendly interface for authentication. It showcases a clean design with modern UI elements and responsive layout.
 
+## Table of Contents
+
+- [Overview](#overview)
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Installation](#installation)
+- [Usage](#usage)
+
 ## Overview
 
 The login page features a minimalistic and elegant design for users to input their credentials. It includes placeholder fields for email and password along with a login button and an option to sign up for new accounts.
