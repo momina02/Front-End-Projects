@@ -9,8 +9,6 @@ The **Student Management System** is a front-end project designed to streamline 
 - [Technologies Used](#technologies-used)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Screenshots](#screenshots)
-- [License](#license)
 
 ## Overview
 
